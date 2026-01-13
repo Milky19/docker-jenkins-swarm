@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  aws:
+    image: hanvitha/aws
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 3
+  devops:
+    image: hanvitha/devops
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+  linux:
+    image: hanvitha/linux
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
